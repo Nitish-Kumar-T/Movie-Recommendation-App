@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="auth-container">
+        <div id="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-button">Login</button>
+        </div>
+        <div id="user-info" style="display:none;">
+            <span id="user-welcome"></span>
+            <button id="logout-button">Logout</button>
+        </div>
+    </div>
+    <div id="recommendations-container" style="display:none;">
+        <h2>Recommended for You</h2>
+        <div id="recommendations-list"></div>
+    </div>
     <div id="app">
         <h1>Movie Recommendations</h1>
         <div id="filters">
@@ -27,7 +42,6 @@
         </div>
         <div id="movie-list"></div>
     </div>
-    <script src="script.js"></script>
     <div id="movie-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -42,5 +56,6 @@
         <h2>My Watchlist</h2>
         <ul id="watchlist"></ul>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
