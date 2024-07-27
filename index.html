@@ -9,6 +9,15 @@
 <body>
     <div id="app">
         <h1>Movie Recommendations</h1>
+        <div id="filters">
+            <input type="text" id="search" placeholder="Search movies...">
+            <select id="genre-filter">
+                <option value="">All Genres</option>
+                <option value="Drama">Drama</option>
+                <option value="Crime">Crime</option>
+                <option value="Action">Action</option>
+            </select>
+        </div>
         <div id="movie-list"></div>
     </div>
     <script src="script.js"></script>
